@@ -1,6 +1,6 @@
 package com.project.back_end.mvc;
 
-import com.project.back_end.service.Service;
+import com.project.back_end.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ public class DashboardController {
     public String adminDashboard(@PathVariable String token) {
 
         // Validate token for admin role
-        Map<String, Object> validation = service.validateToken(token, "admin");
+        Map<String, String> validation = service.validateToken(token, "admin");
 
         // If validation map is empty → token is valid
         if (validation.isEmpty()) {
@@ -37,7 +37,7 @@ public class DashboardController {
     public String doctorDashboard(@PathVariable String token) {
 
         // Validate token for doctor role
-        Map<String, Object> validation = service.validateToken(token, "doctor");
+        Map<String, String> validation = service.validateToken(token, "doctor");
 
         if (validation.isEmpty()) {
             return "doctor/doctorDashboard";  // Thymeleaf template

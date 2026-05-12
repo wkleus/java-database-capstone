@@ -8,14 +8,15 @@ import com.project.back_end.model.Patient;
 import com.project.back_end.repo.AdminRepository;
 import com.project.back_end.repo.DoctorRepository;
 import com.project.back_end.repo.PatientRepository;
-import com.project.back_end.security.TokenService;
+import com.project.back_end.services.TokenService;
+
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.*;
 
-@Service
+@Component
 public class Service {
 
     private final TokenService tokenService;

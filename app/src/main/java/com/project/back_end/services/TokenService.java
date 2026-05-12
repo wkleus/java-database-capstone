@@ -52,11 +52,11 @@ public class TokenService {
     // EXTRACT IDENTIFIER (USER ID)
     public Long extractUserId(String token) {
         try {
-            Claims claims = Jwts.parserBuilder()
-                    .setSigningKey(getSigningKey())
-                    .build()
-                    .parseClaimsJws(token)
-                    .getBody();
+            Claims claims = Jwts.parser()
+                .verifyWith(getSigningKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload();
 
             return Long.parseLong(claims.getSubject());
 

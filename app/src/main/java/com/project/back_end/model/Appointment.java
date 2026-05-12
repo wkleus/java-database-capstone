@@ -1,4 +1,4 @@
-package com.project.back_end.models;
+package com.project.back_end.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Future;

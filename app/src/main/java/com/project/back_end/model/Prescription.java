@@ -1,4 +1,4 @@
-package com.project.back_end.models;
+package com.project.back_end.model;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
