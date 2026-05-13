@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Clinic – Select Role</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/img/favicon.png">
+    <link rel="icon" href="./assets/images/logo/logo.png" type="image/png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -22,29 +23,27 @@
 
 <body>
 
-<main class="main-content">
-    <div class="container">
-        <div class="wrapper">
+<div class="wrapper">
 
-            <!-- Header Placeholder -->
-            <div id="header"></div>
+    <!-- Header Placeholder -->
+    <div id="header"></div>
 
-            <section class="role-selection">
-                <h2>Select Your <span>Role</span></h2>
+    <!-- Main Content: title + buttons mittig -->
+    <main class="main-content">
+        <section class="role-selection">
+            <h2>Select Your <span style="color: #A62B1F;">Role</span></h2>
+            <div class="role-buttons">
+                <button id="adminBtn" onclick="selectRole('admin')">Admin</button>
+                <button id="patientBtn" onclick="selectRole('patient')">Patient</button>
+                <button id="doctorBtn" onclick="selectRole('doctor')">Doctor</button>
+            </div>
+        </section>
+    </main>
 
-                <div class="role-buttons">
-                    <button id="adminBtn" onclick="selectRole('admin')">Admin</button>
-                    <button id="patientBtn" onclick="selectRole('patient')">Patient</button>
-                    <button id="doctorBtn" onclick="selectRole('doctor')">Doctor</button>
-                </div>
-            </section>
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
 
-            <!-- Footer Placeholder -->
-            <div id="footer"></div>
-
-        </div>
-    </div>
-</main>
+</div>
 
 <!-- Hidden Modal -->
 <div id="modal" class="modal">
@@ -53,7 +52,7 @@
 </div>
 
 <!-- Service Script -->
-<script type="module" src="../js/services/index.js" defer></script>
+<script type="module" src="./js/services/index.js" defer></script>
 
 </body>
 </html>
