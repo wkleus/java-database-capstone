@@ -26,7 +26,10 @@ export function renderHeader() {
   // Build header layout
   headerContent += `
     <header class="header">
-      <div class="logo">Smart Clinic</div>
+      <div class="logo-link">
+        <img src="./assets/img/favicon.png" class="logo-img" alt="Logo" onerror="this.style.display='none'">
+        <span class="logo-title">Hospital CMS</span>
+      </div>
       <nav class="nav">
   `;
 

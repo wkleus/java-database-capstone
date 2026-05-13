@@ -5,12 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
-    padding: 10px 20px;
-    border-bottom: 2px solid #ccc;
+    padding: 10px 24px;
+    border-bottom: 1px solid #e0e0e0;
     flex-wrap: wrap;
     min-height: 60px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
   }
   
   /* Logo section with image + title */
@@ -82,10 +83,10 @@
   }
 /* Footer Section */
 .footer {
-    background-color: #f4f4f4;
-    color: #fff;
+    background-color: #f5f5f5;
+    color: #333;
     padding: 40px 20px;
-    border-top: 2px solid #f4f4f4;
+    border-top: 1px solid #e0e0e0;
     
   }
   
@@ -379,4 +380,3 @@
   margin-right: 0.5rem;
   accent-color: #015c5db8; 
 }
-

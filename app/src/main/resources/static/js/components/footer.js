@@ -7,31 +7,39 @@ function renderFooter() {
   footer.innerHTML = `
     <footer class="footer">
 
-      <div class="footer-column">
-        <h4>Smart Clinic</h4>
-        <p>Providing modern healthcare solutions for everyone.</p>
-        <p>© 2024 Smart Clinic. All rights reserved.</p>
-      </div>
+      <div class="footer-container">
 
-      <div class="footer-column">
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Press</a>
-      </div>
+        <div class="footer-logo">
+          <img src="./assets/img/favicon.png" alt="Hospital CMS Logo" onerror="this.style.display='none'">
+          <p>Providing modern healthcare solutions for everyone.</p>
+          <p>© 2024 Smart Clinic. All rights reserved.</p>
+        </div>
 
-      <div class="footer-column">
-        <h4>Support</h4>
-        <a href="#">Account</a>
-        <a href="#">Help Center</a>
-        <a href="#">Contact</a>
-      </div>
+        <div class="footer-links">
 
-      <div class="footer-column">
-        <h4>Legals</h4>
-        <a href="#">Terms</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Licensing</a>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Support</h4>
+            <a href="#">Account</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Legals</h4>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Licensing</a>
+          </div>
+
+        </div>
+
       </div>
 
     </footer>
